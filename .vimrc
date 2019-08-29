@@ -16,6 +16,8 @@
         Plug 'Chiel92/vim-autoformat'
         " CUDA syntax
         Plug 'bfrg/vim-cuda-syntax'
+        " Colorscheme
+        Plug 'dracula/vim'
         call plug#end()
 "_______________________________________________________________________________________________
 " Some basics:
@@ -51,11 +53,12 @@
         set wildmode=longest:full,full                          " Gotta figure out.
 "_______________________________________________________________________________________________
 " Color settings
-        let g:jellybeans_overrides = {
-        \   'background': { '256ctermbg': '234' },
-        \   'CursorLine': { 'guibg': '333333' },
-        \}
-        colorscheme jellybeans
+        " let g:jellybeans_overrides = {
+        " \   'background': { '256ctermbg': '234' },
+        " \   'CursorLine': { 'guibg': '333333' },
+        " \}
+        " colorscheme jellybeans
+        colorscheme dracula
 "_______________________________________________________________________________________________
 " Comment settings.
         let t:Comment="#"
