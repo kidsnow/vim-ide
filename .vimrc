@@ -16,8 +16,6 @@
         Plug 'Chiel92/vim-autoformat'
         " CUDA syntax
         Plug 'bfrg/vim-cuda-syntax'
-        " Colorscheme
-        Plug 'dracula/vim'
         call plug#end()
 "_______________________________________________________________________________________________
 " Some basics:
@@ -42,7 +40,7 @@
         set title                                               " Display the name of current file on title bar.
         set showcmd                                             " Show command in the last line of the screen.
         set autoread                                            " When a file has been detected to have been changed outside of Vim, automatically read it again.
-        let mapleader=","                                       " Set leader key.
+        let mapleader="\\"                                      " Set leader key.
         set sol                                                 " Move cursor to the start of line.
         set noswapfile                                          " Prevent creating swap file.
         set nobackup                                            " Do not keep a backup file.
@@ -91,7 +89,7 @@
         				\ let t:Uncomment=';'   
         augroup END
         
-        noremap <silent>    <leader>c   :call CommentToggle()<CR>
+        noremap <silent>    <leader>\   :call CommentToggle()<CR>
         function! CommentToggle()
         	if getline(".") =~ '^\s*'.t:Uncomment.t:Space
         		exe ":norm ^".strlen(t:Comment.t:Space)."x"
