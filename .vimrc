@@ -16,6 +16,8 @@
         Plug 'Chiel92/vim-autoformat'
         " CUDA syntax
         Plug 'bfrg/vim-cuda-syntax'
+        " Autocomplete
+        Plug 'ycm-core/YouCompleteMe'
         call plug#end()
 "_______________________________________________________________________________________________
 " Some basics:
