@@ -16,12 +16,6 @@
         Plug 'Chiel92/vim-autoformat'
         " CUDA syntax
         Plug 'bfrg/vim-cuda-syntax'
-        " Autocomplete
-        " 1. Go to .vim/plugged/YouCompleteMe and execute following cmd.
-        " 'python3 ./install.py --clang-completer'
-        " 2. Copy .vim/plugged/YouCompleteMe/.ycm_extra_conf.py
-        "    to the root of your source code.
-        Plug 'ycm-core/YouCompleteMe'
         call plug#end()
 "_______________________________________________________________________________________________
 " Some basics:
